@@ -36,10 +36,14 @@ body {
 }
 
 #level{
-    color: #000000;
+    color: #fffffF;
     letter-spacing: 2px;
     margin: 20px 0 25px;
-    font-weight: bold;  
+    font-weight: bold;
+    background-color: #000000;
+    padding: 10px 15px ;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn {

@@ -5,12 +5,13 @@ let level = 0;
 let isGameStarted = false;
 let btnColor = ["yellow", "green", "pink", "purple"]
 
-const levelText = document.querySelector('h2');
+const container = document.querySelector('body');
+const levelText = document.querySelector('button');
 const btns = document.querySelectorAll('.btn');
 
 //To start the game when user clicks any key on the keyboard
 //Remove the disabled attribute from buttons element
-document.addEventListener('keydown', () => {
+levelText.addEventListener('click', () => {
     if (isGameStarted === false) {
         //set to true so that keypress event is not trigered until the same over
         isGameStarted = true;
@@ -78,7 +79,11 @@ const checkSeq = function (idx) {
     else {
         //It will execute if the value of first or last gameSeq and userSeq array is not same
         levelText.style.color = 'red';
-        levelText.innerHTML = `Your score is :  ${level} <br> please press any key to restart the game`;
+        levelText.innerHTML = `<h2>YOUR SCORE :  ${level} <br> click again to restart the game</h2>`;
+        container.style.backgroundColor = 'red';
+        setTimeout(()=>{
+            container.style.backgroundColor = 'white';
+        }, 1000)
         resetGame();
     }
 }
