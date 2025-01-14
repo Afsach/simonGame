@@ -30,7 +30,7 @@ const btnFlash = function (btn) {
     btn.classList.add('btn-flash');
     setTimeout(() => {
         btn.classList.remove('btn-flash')
-    }, 300);
+    }, 400);
 }
 
 //function to flash the button clicked by user
@@ -39,7 +39,7 @@ const userFlash = function (btn) {
     btn.classList.add('btn-flash');
     setTimeout(() => {
         btn.classList.remove('btn-flash')
-    }, 300);
+    }, 400);
 }
 
 const levelUp = function () {
