@@ -30,7 +30,7 @@ const btnFlash = function (btn) {
     btn.classList.add('btn-flash');
     setTimeout(() => {
         btn.classList.remove('btn-flash')
-    }, 400);
+    },400);
 }
 
 //function to flash the button clicked by user
